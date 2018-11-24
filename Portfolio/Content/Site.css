@@ -1,12 +1,37 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html, body {
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 2em;
+    font-size: 18px;
+    /*background: #222;*/
+    color: white;
+    font-style: bold;
+}
+
+.header {
+    width: 75%;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+    background-color: #49065a;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    color: #888;
+    font-size: 2em;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    padding-top: 15%;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +46,134 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 50%;
+    z-index:-1;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.mainname h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+h3{
+    color:black;
+    font-size:36px;
+}
+
+.scrolling-section{
+    background-color:white;
+    min-width:100%;
+    height: 550px;
+    text-align: center;
+    overflow:scroll;
+    
+}
+
+.scrolling-section img {
+    width: 500px;
+}
+
+.scrolling-section p {
+    color:black;
+}
+
+
+
+/* Button Hover Fill */
+button {
+    position: relative;
+    //display:block;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #383736;
+    border: 2px #383736 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
+.svg {
+    -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+    .svg:before {
+        position: absolute;
+        content: "";
+        background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
+
+    .svg:after {
+        content: "";
+        position: absolute;
+        background: #49065a;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -2;
+        -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
+
+    .svg:hover {
+        color: white;
+        border: 0px #d19b26 solid;
+    }
+
+        .svg:hover:before {
+            opacity: .8;
+        }
+
+        .svg:hover:after {
+            top: 0;
+        }
+
+footer {
+    background: red;
+    min-width: 100%;
+    padding: 0%;
+    margin: 0%;
+    transform: rotate(2deg);
+}
+
+.totallyOddImg{
+    width:200px !important;
 }

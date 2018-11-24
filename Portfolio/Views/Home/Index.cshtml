@@ -2,30 +2,96 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<br />
+<br />
+
+<!-- The Coding Video Background Loop -->
+
+<div class="container body-content">
+    <video autoplay muted loop id="myVideo">
+        <source src="~/Video/backgroundvideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="header">
+        <div class="mainname">
+            <h1>Gary Gillespie</h1>
+        </div>
+        <h1>
+            Graduate
+            <span class="txt-rotate"
+                  data-period="2000"
+                  data-rotate='[ "Web Developer", "Games Developer", "Software Engineer", "QA Tester", "Fullstack Developer", "" ]'></span>
+        </h1>
+        <h2>Browse some of my previous projects below.</h2>
+    </div>
+
+    <br />
+    <br />
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+
+
+<div data-aos="slide-right">
+    <div class="scrolling-section">
+        <button class="svg">Visit Website</button>
+        <button class="svg">GitHub</button>
+        <button class="svg">Android</button>
+        <button class="svg">iOS</button>
+        <h3>Totally Odd - Number Game (Android, iOS)</h3>
+        <img class="totallyOddImg" src="~/Image/p5.jpg" />
+        <img class="totallyOddImg" src="~/Image/p2.jpg" />
+        <img class="totallyOddImg" src="~/Image/p1.jpg" />
+        <img class="totallyOddImg" src="~/Image/p3.jpg" />
+        <img class="totallyOddImg" src="~/Image/p4.jpg" />
     </div>
 </div>
+
+<br />
+
+<div data-aos="slide-left">
+    <div class="scrolling-section">
+        <button class="svg">Visit Website</button>
+        <button class="svg">GitHub</button>
+        <h3>RPM Joinery & Maintenance</h3>
+        <img src="~/Image/rpmwebsitepreview.PNG" />
+        <p> RPM Joinery and Maintenace is an ASP.NEt Mvc 5 website created to allow the company to dispaly past and future project work. </p>
+    </div>
+</div>
+
+<br />
+
+<div data-aos="slide-right">
+    <div class="scrolling-section">
+        <button class="svg">Visit Website</button>
+        <button class="svg">GitHub</button>
+        <button class="svg">Download</button>
+        <h3>Totally Odd Number Game Landing Page</h3>
+    </div>
+</div>
+
+<br />
+
+<div data-aos="slide-right">
+    <div class="scrolling-section">
+        <button class="svg">Visit Website</button>
+        <button class="svg">GitHub</button>
+        <h3> Personal Portfolio Website </h3>
+    </div>
+</div>
+
+<br />
+
+<div data-aos="slide-right">
+    <div class="scrolling-section">
+        <button class="svg">Visit Website</button>
+        <button class="svg">GitHub</button>
+        <h3> Hotel Booking Website </h3>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
