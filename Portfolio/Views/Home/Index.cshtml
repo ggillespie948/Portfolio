@@ -25,16 +25,16 @@
     </div>
 
     <br />
-    <br />
+    <br id="projectsSection" />
 </div>
 
 <!-- Projects -->
-<div data-aos="slide-right">
+<div data-aos="slide-right" >
     <div class="scrolling-section">
-        <button class="svg"  onclick="location.href='http://totallyoddlanding.azurewebsites.net/';">Visit Website</button>
-        <button class="svg" onclick="location.href='https://github.com/ggillespie948/Totally-Odd---Number-Game';" >GitHub</button>
-        <button class="svg"  onclick="location.href='https://play.google.com/store/apps/details?id=com.ApexStudios.OddityAlpha&hl=en';">Android</button>
-        <button class="svg"  onclick="location.href='https://itunes.apple.com/us/app/totally-odd-number-game/id1437309450?mt=8';">iOS</button>
+        <button class="svg" onclick="location.href='http://totallyoddlanding.azurewebsites.net/';">Visit Website</button>
+        <button class="svg" onclick="location.href='https://github.com/ggillespie948/Totally-Odd---Number-Game';">GitHub</button>
+        <button class="svg" onclick="location.href='https://play.google.com/store/apps/details?id=com.ApexStudios.OddityAlpha&hl=en';">Android</button>
+        <button class="svg" onclick="location.href='https://itunes.apple.com/us/app/totally-odd-number-game/id1437309450?mt=8';">iOS</button>
         <h3 style="font-weight:bold; ">Totally Odd - Number Game (Android, iOS)</h3>
         <hr />
 
@@ -110,10 +110,10 @@
         <div class="col-lg-4">
             <br />
             <p>
-                	Worked as part of an agile development team (scrum methodology) to create an analytics dashboard for DUSA media
-                	Showed a graphical representation of 400,000 transaction records
-                	Created the front-end and assisted in the back-end development for certain aspects (retrieving chart data)
-                	
+                Worked as part of an agile development team (scrum methodology) to create an analytics dashboard for DUSA media
+                Showed a graphical representation of 400,000 transaction records
+                Created the front-end and assisted in the back-end development for certain aspects (retrieving chart data)
+
             </p>
             <p> Relevant skills: jQuery, Bootstrap4, CSS, PHP (Yii Framework), Big Data, Charts.JS </p>
         </div>
@@ -145,11 +145,13 @@
     </div>
 </div>
 
+<br id="skillsSection"  />
+<br />
 <br />
 
 
 <!--My Skills -->
-<div data-aos="fade-up">
+<div data-aos="fade-up" >
     <div class="scrolling-section-lg">
         <h2 style="font-weight:bold;"> My Skills </h2>
         <h2> C# </h2>
@@ -181,5 +183,26 @@
                 $('.navbar').removeClass('solid');
             }
         });
+    });
+</script>
+
+<script>
+    // Scroll to position event handlers
+    $(".projectsButton").click(function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#projectsSection").offset().top 
+            }, 2000);
+    });
+
+    $(".mySkillsButton").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#skillsSection").offset().top
+        }, 2000);
+    });
+
+    $(".contactButton").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#contactSection").offset().top
+        }, 2000);
     });
 </script>
