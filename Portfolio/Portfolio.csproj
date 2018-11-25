@@ -196,12 +196,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\dusa1.PNG" />
+    <Content Include="Image\dusa2.PNG" />
     <Content Include="Image\p1.jpg" />
     <Content Include="Image\p2.jpg" />
     <Content Include="Image\p3.jpg" />
     <Content Include="Image\p4.jpg" />
     <Content Include="Image\p5.jpg" />
+    <Content Include="Image\portfolioPic.PNG" />
     <Content Include="Image\rpmwebsitepreview.PNG" />
+    <Content Include="Image\totallyoddlanding.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
